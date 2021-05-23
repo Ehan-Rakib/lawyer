@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+.navbar-light .navbar-nav .nav-custom {
+    color: #235286;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.navbar-light .navbar-nav .nav-custom:hover {
+    color: #042e5e;
+}
+
+/* banner */
+
+.banner {
+    background-image: url('../images/lawyer_pro.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+
+.banner .content {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+}
+
+.banner .content h1 {
+    font-size: 60px;
+    color: #fff;
+    padding: 0 180px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.icon1 {
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    animation: iconAnimation alternate 2s ease-in-out infinite;
+}
+
+
+@keyframes iconAnimation {
+    from {
+        top: 75%;
+    }
+
+    to {
+        top: 80%;
+    }
+}
+
+/* banner part end */
+
+
+/* who we are start */
+.who-we-are {
+    padding: 100px 0;
+}
+
+.who-we-are span {
+
+    width: 0px;
+    height: 3px;
+    background-color: #f05328;
+    display: block;
+    transition: 0.5s all ease-in-out;
+}
+
+.who-we-are:hover span {
+    width: 55px;
+}
+
+.who-we-are h1 {
+    color: #204f84;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.who-we-are p {}
+
+/* who we are end */
+
+
+/* what we do start */
+
+.what-we-do {
+
+    background-color: #f5f5f5e5;
+    background-image: url('../images/lawyer_pro2.png');
+    background-position: right bottom;
+    background-size: 900px;
+    background-repeat: no-repeat;
+
+}
+
+.heading {}
+
+.heading span {
+
+    width: 0px;
+    height: 3px;
+    background-color: #f05328;
+    display: block;
+    transition: 0.5s all ease-in-out;
+    margin: auto;
+
+}
+
+.what-we-do:hover .heading span {
+    width: 55px;
+}
+
+.heading h1 {
+    color: #204f84;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.image {
+    position: relative;
+}
+
+
+
+
+.image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,393584+65&0+0,1+65 */
+    background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(57, 53, 132, 1) 65%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(57, 53, 132, 1) 65%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(57, 53, 132, 1) 65%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#393584', GradientType=0);
+    /* IE6-9 */
+    opacity: 0.4;
+    transition: 0.5s all ease-in-out;
+
+
+}
+
+.image:hover::after {
+    height: 100%;
+
+}
+
+.text {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    top: 60%;
+    color: #fff;
+
+}
+
+.image:hover .text {
+    opacity: 1;
+    top: 50%;
+}
+
+.text h1 {
+
+    z-index: 555;
+}
+
+.image-icon {
+    z-index: 1000;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #fff;
+    opacity: 0;
+
+}
+
+.image:hover .image-icon {
+    opacity: 1;
+    left: 50%;
+    transition: 0.5s all ease-in-out;
+
+}
+
+/* what we do end */
+
+/* Attorney part start */
+.attorney {
+    background-image: url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+.attorney:hover span {
+    width: 55px;
+}
+
+.attorney span {
+    width: 0px;
+    height: 3px;
+    background-color: #f05328;
+    display: block;
+    transition: 0.5s all ease-in-out;
+
+
+
+}
+
+.attorney p {
+    color: #929dcf;
+}
+
+.attorney h1 {
+
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+
+.attorney a {
+    color: #f05328;
+    text-decoration: none;
+    transition: 0.4s all ease-in-out;
+    padding: 5px 15px;
+    display: inline-block;
+    border: 1px solid #929dcf;
+}
+
+.attorney a:hover {
+    border: 1px solid #f05328;
+    color: #fff;
+}
+
+
+.image .designation {
+    z-index: 1000;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.image:hover .designation {
+    opacity: 1;
+    left: 10%;
+}
+
+
+
+/* Attorney part end */
+
+/* lanuage part start */
+.language {
+    padding: 50px 0;
+}
+
+.language:hover .heading span {
+    width: 55px;
+}
+
+.language h2 {
+    font-size: 25px;
+    color: #204f87;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.language p {
+    color: #807a80;
+    text-align: justify;
+    padding-right: 15px;
+
+
+}
+
+.language a {
+    color: #f05328;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.4s all ease-in-out;
+    padding: 5px 15px;
+    display: inline-block;
+    border: 1px solid #dee2e6;
+
+
+}
+
+.language a:hover {
+    border-color: #f05328;
+
+}
+
+/* lanuage part end */
+.contact {
+    background-color: #28377e;
+}
+
+.contact:hover .heading span {
+    width: 55px
+}
+
+.contact .heading h1 {
+    color: #fff;
+}
+
+.contact input {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #bcbcbc !important;
+    color: #fff !important;
+}
+
+.contact textarea {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #bcbcbc !important;
+    color: #fff !important;
+}
+
+form input::placeholder {
+    color: #fff !important;
+}
+
+form textarea::placeholder {
+    color: #fff !important;
+}
+
+
+button.btn-custom {
+    border: none;
+    border: 1px solid #f05328;
+    padding: 6px 30px;
+    border-radius: 3px;
+    background-color: #f05328;
+    color: #fff;
+    transition: 0.5s all ease-in-out;
+
+}
+
+button.btn-custom:hover {
+    background-color: transparent;
+    border: 1px solid #f05328;
+}
+
+form input:focus {
+    box-shadow: none !important;
+    caret-color: #fff;
+}
+
+form textarea:focus {
+    box-shadow: none !important;
+    caret-color: #fff;
+
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+}
+
+footer span {
+    color: aqua;
+    margin: 0 5px;
+}
